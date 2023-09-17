@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario M6</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    
+    
+    
+</head>
+<body id="body">
+    <header>
+        <h1>ÁREA DE REGISTRO</h1>
+    </header>
+    <main>
+       <div class="container-principal">
+
+        <div class="containerIzquierda">
+            <form class="form-izquierda">
+                <article class="article-colum">
+                    <label class="label-formIzquierda" for="name">Nombre</label>
+                    <input class="input-formIzquierda" type="text" id="name" name="name" placeholder="Escribe aquí tu nombre">
+                </article>
+                <article class="article-colum">
+                    <label class="label-formIzquierda" for="dorsal">Dorsal</label>
+                    <select name="dorsal" id="dorsal">
+                        <option value="" disabled selected>Selecciona dorsal</option>
+                    </select>
+                    <script src="scripts.js"></script>
+                    
+                    
+                </article>
+                <article class="article-colum">
+                    <label class="label-formIzquierda" for="name">Genero</label>
+                    <select name="genero" id="genero" >
+                        <option value="" disabled selected>Selecciona genero</option>
+                        <option value="masc">Masculino</option>
+                        <option value="fem">Femenino</option>
+                        
+                    </select>
+                </article>
+                <article class="article-colum">
+                    <label class="label-formIzquierda" for="email">Email </label>
+                    <input class="input-formIzquierda" type="email" name="email" id="email" placeholder="Escribe aquí tu email">
+                </article>
+                
+                
+            </form>
+
+        </div>
+        <div class="containerCentro">
+            <img class="imgCentral" src="/Form_M9/squiggamespng.png" alt="">
+            <input class="btn-Enviar" type="submit" name="btn-Enviar" id="btn-Enviar">
+            <script src="submit.js"></script>
+        </div>
+        <div class="containerDerecha">
+            <form class="form-derecha" id="form-derecha">
+                <article>
+                    <label class="label-formDerecha" for="fotoUsuario">Foto </label><br>
+                    <input class="input-formDerecha" type="file" id="fotoUsuario" name="fotoUsuario" accept="image/*" >
+                </article>
+                <article>
+                    
+                </article>
+                <article class="article-colum" style="margin-top: 30px;">
+                    <label class="label-formIzquierda" for="edad">Edad</label>
+                    <input class="input-formIzquierda" type="number" id="edad" name="edad" min="18"  max="99" placeholder="Escribe aquí tu edad">
+                    
+                </article>
+                <div class="div-fotoDerecha">
+                    <img class="imgDerecha" src="/Form_M9/squidgamesGeometria.png"  alt="">
+                </div>
+                <article class="checkbox-article">
+                    <input class="checkbox-class" type="checkbox" name="cbTerminos" id="cbTerminos">
+                    
+                    <label class="checkbox-class-label" for="cbTerminos" id="cbTerminos">Acepto Terminos y Condiciones</label><br>
+                </article>
+                <article class="article-condiciones">
+                 <i><a  href="https://dx35vtwkllhj9.cloudfront.net/netflix/squid-game/SquidGameTCs.pdf" target="_blank" >Leer Términos y condiciones</a></i>
+                    
+                </article>
+            </form>
+        </div>
+       </div>
+
+    </main>
+    <footer>
+        &copy; <i>Derechos Reservados por Agustín Cintas</i>
+    </footer>
+</body>
+</html>
